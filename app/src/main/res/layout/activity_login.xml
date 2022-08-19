@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/doctor"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            />
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/welcome_to_this_application"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/black"
+            style="@style/Widget.Design.TextInputLayout"
+            app:hintTextAppearance="@color/black"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginEmail"
+            android:hint="Enter your email"
+            android:drawableStart="@drawable/ic_baseline_mail_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textColorHint="@color/black"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginPassword"
+            android:hint="Enter your password"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textColorHint="@color/black"
+            />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in now"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/loginPageQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Login"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</ScrollView>
